@@ -113,6 +113,10 @@ python src/cli.py \
 
 ---
 
+## Example CLI Usage
+
+![CLI Example](screenshots/cli-example.png)
+
 ## Output Data
 
 The scraper extracts:
@@ -125,6 +129,10 @@ The scraper extracts:
 Example CSV and JSON outputs are included in the `outputs/` directory.
 
 ---
+
+## Sample Output
+
+![JSON Output](screenshots/json-output.png)
 
 ## Reliability Features
 

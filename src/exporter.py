@@ -11,6 +11,11 @@ from pathlib import Path
 import pandas as pd
 
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+OUTPUT_DIR = BASE_DIR / "outputs"
+
+OUTPUT_DIR.mkdir(exist_ok=True)
+
 def export(books: list[dict], output_format: str, output_file: str) -> None:
     """
     This function will export the books into the chosen output format into
@@ -25,13 +30,13 @@ def export(books: list[dict], output_format: str, output_file: str) -> None:
     if output_format == "csv":
         if not output_file.endswith(".csv"):
             output_file = output_file + ".csv"
-        target_path = Path("../outputs") / output_file
+        target_path = OUTPUT_DIR / output_file
         df = pd.DataFrame(books)
         df.to_csv(target_path, index=False)
     elif output_format == "json":
         if not output_file.endswith(".json"):
             output_file = output_file + ".json"
-        target_path = Path("../outputs") / output_file
+        target_path = OUTPUT_DIR / output_file
         with target_path.open( "w", encoding="utf-8") as f:
             json.dump(books, f, ensure_ascii=False, indent=4)
     else:
