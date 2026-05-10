@@ -132,7 +132,7 @@ Example CSV and JSON outputs are included in the `outputs/` directory.
 
 ## Sample Output
 
-![JSON Output](screenshots/json-output.png)
+<img src="screenshots/json-output.png" width="600">
 
 ## Reliability Features
 
