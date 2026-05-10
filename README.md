@@ -115,7 +115,7 @@ python src/cli.py \
 
 ## Example CLI Usage
 
-![CLI Example](screenshots/cli-example.png)
+<img src="screenshots/cli-example.png" width="600">
 
 ## Output Data
 
@@ -132,7 +132,7 @@ Example CSV and JSON outputs are included in the `outputs/` directory.
 
 ## Sample Output
 
-<img src="screenshots/json-output.png" width="600">
+<img src="screenshots/csv-output.png" width="600">
 
 ## Reliability Features
 
